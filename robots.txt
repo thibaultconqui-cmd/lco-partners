@@ -1,0 +1,8 @@
+# Robots.txt pour LCO-Partners
+# https://www.lco-partners.fr
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.lco-partners.fr/sitemap.xml
