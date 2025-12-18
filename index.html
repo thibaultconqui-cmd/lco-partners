@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCO-Partners | Cabinet de chasse de têtes IT & Conseil</title>
+    <meta name="description" content="Cabinet de chasse de têtes spécialisé dans les métiers du Conseil et du Système d'Information : Architecture IT, Cloud, DevOps, Data & Intelligence Artificielle.">
+    <meta name="keywords" content="cabinet chasse de têtes, recrutement IT, consultant IT, architecture IT, Cloud, DevOps, Data, Intelligence Artificielle, recrutement conseil, Paris, France">
+    <meta name="author" content="LCO-Partners">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.lco-partners.fr/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.lco-partners.fr/">
+    <meta property="og:title" content="LCO-Partners | Cabinet de chasse de têtes IT & Conseil">
+    <meta property="og:description" content="Cabinet de chasse de têtes spécialisé dans les métiers du Conseil et du Système d'Information : Architecture IT, Cloud, DevOps, Data & IA.">
+    <meta property="og:image" content="https://www.lco-partners.fr/images/slide.png">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.lco-partners.fr/">
+    <meta name="twitter:title" content="LCO-Partners | Cabinet de chasse de têtes IT & Conseil">
+    <meta name="twitter:description" content="Cabinet de chasse de têtes spécialisé IT & Conseil : Architecture, Cloud, DevOps, Data & IA.">
+    <meta name="twitter:image" content="https://www.lco-partners.fr/images/slide.png">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "LCO-Partners",
+        "description": "Cabinet de chasse de têtes spécialisé dans les métiers du Conseil et du Système d'Information",
+        "url": "https://www.lco-partners.fr",
+        "logo": "https://www.lco-partners.fr/public/favicon.svg",
+        "founder": {
+            "@type": "Person",
+            "name": "Laurent Conqui",
+            "jobTitle": "Président & Fondateur"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "FR"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/laurent-conqui/"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "contact@lco-partners.fr",
+            "contactType": "customer service"
+        }
+    }
+    </script>
+    
+    <link rel="icon" type="image/svg+xml" href="public/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="public/apple-touch-icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            200: '#bae0fd',
+                            300: '#7cc8fb',
+                            400: '#36aaf5',
+                            500: '#0c8ee6',
+                            600: '#0070c4',
+                            700: '#01599f',
+                            800: '#064b83',
+                            900: '#0b3f6d',
+                            950: '#072849',
+                        },
+                        secondary: {
+                            50: '#f6f7f9', 100: '#eceef2', 200: '#d5d9e2', 300: '#b1b9c9',
+                            400: '#8793ab', 500: '#687591', 600: '#535e77', 700: '#444c61',
+                            800: '#3b4252', 900: '#343946', 950: '#23262f',
+                        },
+                    },
+                    fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+                },
+            },
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        html { scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(135deg, #072849 0%, #0c8ee6 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); }
+        .hidden { display: none; }
+        /* Section Partenaires - Rendu uniforme cross-platform */
+        .partners-section {
+            padding: 64px 0;
+            background-color: #ffffff;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .partners-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 16px;
+            margin-bottom: 32px;
+            box-sizing: border-box;
+        }
+        .partners-title {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif;
+            font-size: 24px;
+            line-height: 1.2;
+            font-weight: 700;
+            color: #111827;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+            letter-spacing: 0;
+            word-spacing: 0;
+        }
+        @media (min-width: 768px) {
+            .partners-title {
+                font-size: 30px;
+            }
+        }
+        /* Animation de défilement synchronisée */
+        @keyframes partners-scroll {
+            0% { transform: translate3d(0, 0, 0); }
+            100% { transform: translate3d(-50%, 0, 0); }
+        }
+        .partners-track {
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+            white-space: nowrap;
+            will-change: transform;
+            animation: partners-scroll 25s linear infinite;
+        }
+        .partners-logos {
+            display: inline-flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            gap: 64px;
+            padding: 0 32px;
+            box-sizing: border-box;
+        }
+        .partner-logo {
+            height: 48px;
+            width: auto;
+            min-width: 80px;
+            max-width: 140px;
+            object-fit: contain;
+            flex-shrink: 0;
+            display: inline-block;
+            border: none;
+            outline: none;
+            image-rendering: auto;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        /* Responsive mobile */
+        @media (max-width: 640px) {
+            .partners-section {
+                padding: 48px 0;
+            }
+            .partners-logos {
+                gap: 40px;
+                padding: 0 20px;
+            }
+            .partner-logo {
+                height: 40px;
+                max-width: 100px;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased bg-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#accueil" class="text-2xl font-bold text-primary-900">LCO<span class="text-primary-600">-Partners</span></a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#accueil" class="text-gray-700 hover:text-primary-600 transition-colors font-medium">Accueil</a>
+                    <a href="#entreprises" class="text-gray-700 hover:text-primary-600 transition-colors font-medium">Entreprises</a>
+                    <a href="#candidats" class="text-gray-700 hover:text-primary-600 transition-colors font-medium">Candidats</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary-600 transition-colors font-medium">Qui sommes-nous</a>
+                    <a href="#contact" class="bg-primary-600 text-white px-5 py-2 rounded-lg hover:bg-primary-700 transition-colors font-medium">Contact</a>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#accueil" class="block text-gray-700 hover:text-primary-600 font-medium py-2">Accueil</a>
+                <a href="#entreprises" class="block text-gray-700 hover:text-primary-600 font-medium py-2">Entreprises</a>
+                <a href="#candidats" class="block text-gray-700 hover:text-primary-600 font-medium py-2">Candidats</a>
+                <a href="#about" class="block text-gray-700 hover:text-primary-600 font-medium py-2">Qui sommes-nous</a>
+                <a href="#contact" class="block bg-primary-600 text-white px-5 py-2 rounded-lg text-center font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="pt-16">
+        <div class="text-white relative" style="background: linear-gradient(135deg, rgba(7, 40, 73, 0.85) 0%, rgba(12, 142, 230, 0.85) 100%), url('images/slide.png'); background-size: cover; background-position: center;">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+                <div class="max-w-4xl">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        Cabinet de chasse de têtes IT
+                    </h1>
+                    <p class="text-xl md:text-2xl text-primary-100 mb-8 leading-relaxed">
+                        Spécialisé dans les métiers du Conseil et du Système d'Information : 
+                        <span class="font-semibold text-white">Architecture IT, Cloud, DevOps, Data & Intelligence Artificielle.</span>
+                    </p>
+                    <p class="text-lg text-primary-200 mb-10 max-w-3xl">
+                        Notre objectif est simple : comprendre vos enjeux technologiques et vous mettre en relation avec les talents capables de concevoir, bâtir et faire évoluer votre Système d'Information.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#entreprises" class="inline-flex items-center justify-center bg-white text-primary-900 px-8 py-4 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
+                            Entreprises <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                        <a href="#candidats" class="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-colors">
+                            Candidats <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-50 border-b border-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center"><div class="text-3xl font-bold text-primary-600">20+</div><div class="text-gray-600 mt-1">Années d'expertise</div></div>
+                    <div class="text-center"><div class="text-3xl font-bold text-primary-600">IT & Conseil</div><div class="text-gray-600 mt-1">Spécialisation</div></div>
+                    <div class="text-center"><div class="text-3xl font-bold text-primary-600">100%</div><div class="text-gray-600 mt-1">Approche directe</div></div>
+                    <div class="text-center"><div class="text-3xl font-bold text-primary-600">Sur-mesure</div><div class="text-gray-600 mt-1">Accompagnement</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Nos accompagnements -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nos accompagnements</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Que vous soyez une entreprise à la recherche de talents ou un professionnel IT en quête de nouvelles opportunités</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Entreprises Card -->
+                <div id="entreprises" class="bg-gradient-to-br from-primary-50 to-white rounded-2xl p-8 border border-primary-100 card-hover scroll-mt-24">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-primary-600 p-3 rounded-xl">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 ml-4">Entreprises</h3>
+                    </div>
+                    <p class="text-gray-700 mb-6 text-lg">Vous recherchez un talent clé pour renforcer vos équipes ou sécuriser un projet stratégique ?</p>
+                    <p class="text-gray-600 mb-6">Nous identifions et approchons des profils techniques et stratégiques capables d'accélérer vos projets de transformation.</p>
+                    <button onclick="toggleSection('entreprisesContent')" class="inline-flex items-center bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
+                        Découvrir <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div id="entreprisesContent" class="hidden mt-8 pt-8 border-t border-primary-200">
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">Vous recherchez des experts capables d'accélérer vos projets de transformation digitale ?</h4>
+                        <p class="text-gray-700 mb-6">Nous approchons les meilleurs profils du marché pour concevoir, sécuriser et faire évoluer vos environnements IT.</p>
+                        <p class="text-gray-600 mb-6">Les métiers de l'architecture évoluent rapidement : Cloud, Data, DevOps, API, cybersécurité, modernisation applicative, pilotage de programmes complexes. Les entreprises ont aujourd'hui besoin d'experts hybrides, capables d'intervenir à la fois sur les enjeux techniques, organisationnels et stratégiques.</p>
+                        <p class="text-primary-700 font-semibold mb-6">C'est précisément là que nous intervenons.</p>
+                        <p class="text-gray-600 mb-8">Nous identifions, sélectionnons et approchons des consultants, experts, leaders techniques et managers à forte valeur ajoutée, capables d'accompagner vos projets de transformation digitale et de garantir la réussite de vos programmes IT.</p>
+                        <div class="bg-white rounded-xl p-6 mb-8 border border-primary-100">
+                            <h5 class="font-bold text-gray-900 mb-4">Notre rôle : vous connecter aux talents qui font la différence</h5>
+                            <p class="text-gray-600 mb-4">Nous intervenons sur des recrutements complexes et exigeants, où la maîtrise des environnements IT modernes est essentielle.</p>
+                            <p class="font-medium text-gray-800 mb-3">Nos candidats sont capables de :</p>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start"><svg class="w-5 h-5 text-primary-600 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>concevoir et piloter des architectures et plateformes IT</li>
+                                <li class="flex items-start"><svg class="w-5 h-5 text-primary-600 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>accompagner les transformations Cloud, Data et DevOps</li>
+                                <li class="flex items-start"><svg class="w-5 h-5 text-primary-600 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>sécuriser et moderniser les systèmes existants</li>
+                                <li class="flex items-start"><svg class="w-5 h-5 text-primary-600 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>porter une vision technologique auprès des directions</li>
+                                <li class="flex items-start"><svg class="w-5 h-5 text-primary-600 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>accélérer la mise en œuvre de programmes stratégiques</li>
+                            </ul>
+                        </div>
+                        <h5 class="text-xl font-bold text-gray-900 mb-6">Nos expertises</h5>
+                        <div class="grid sm:grid-cols-2 gap-4 mb-8">
+                            <div class="bg-primary-50 border border-primary-100 rounded-xl p-4"><h6 class="font-semibold text-gray-900 mb-1">Architecture & Environnements IT</h6><p class="text-sm text-gray-600">Architecture d'entreprise, applicative, Cloud, Data Platforms, API & intégration, sécurité, microservices et modernisation des SI.</p></div>
+                            <div class="bg-primary-50 border border-primary-100 rounded-xl p-4"><h6 class="font-semibold text-gray-900 mb-1">Cloud, DevOps & Plateformes</h6><p class="text-sm text-gray-600">Experts Cloud, DevOps/SRE, Platform Engineering, CI/CD, Infrastructure as Code, conteneurisation, FinOps, Tech Leads.</p></div>
+                            <div class="bg-primary-50 border border-primary-100 rounded-xl p-4"><h6 class="font-semibold text-gray-900 mb-1">Data, IA & Analytics</h6><p class="text-sm text-gray-600">Data Architects & Engineers, DataOps/MLOps, IA & LLM, BI & Analytics, gouvernance de la donnée, Data Leaders.</p></div>
+                            <div class="bg-primary-50 border border-primary-100 rounded-xl p-4"><h6 class="font-semibold text-gray-900 mb-1">Consulting & Pilotage</h6><p class="text-sm text-gray-600">Consultants IT/Digital, Program & Delivery Managers, PMO stratégiques, Leads techniques, Experts transformation SI.</p></div>
+                            <div class="bg-primary-50 border border-primary-100 rounded-xl p-4 sm:col-span-2 sm:max-w-md sm:mx-auto"><h6 class="font-semibold text-gray-900 mb-1">Cybersécurité</h6><p class="text-sm text-gray-600">Cloud Security, GRC/RSSI, Pentest, SecOps, architectures de sécurité et gouvernance des risques.</p></div>
+                        </div>
+                        <div class="bg-primary-900 text-white rounded-xl p-6">
+                            <h5 class="font-bold text-lg mb-4">Pourquoi faire appel à LCO-Partners ?</h5>
+                            <ul class="space-y-3">
+                                <li class="flex items-start"><svg class="w-5 h-5 text-primary-300 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>Expertise rare du marché IT, Cloud, Data & Transformation</li>
+                                <li class="flex items-start"><svg class="w-5 h-5 text-primary-300 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>Approche directe systématique pour engager les meilleurs talents</li>
+                                <li class="flex items-start"><svg class="w-5 h-5 text-primary-300 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>Accompagnement de bout en bout : cadrage, ciblage, approche, sélection</li>
+                                <li class="flex items-start"><svg class="w-5 h-5 text-primary-300 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>Positionnement reconnu sur les recrutements exigeants et stratégiques</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Candidats Card -->
+                <div id="candidats" class="bg-gradient-to-br from-secondary-50 to-white rounded-2xl p-8 border border-secondary-100 card-hover scroll-mt-24">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-secondary-700 p-3 rounded-xl">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 ml-4">Candidats</h3>
+                    </div>
+                    <p class="text-gray-700 mb-6 text-lg">Vous êtes consultant, expert ou manager IT et souhaitez évoluer vers des missions plus exigeantes ou un environnement qui valorise réellement votre expertise ?</p>
+                    <p class="text-gray-600 mb-6">Nous accompagnons des profils issus des meilleurs cabinets et environnements technologiques vers des trajectoires à forte valeur ajoutée.</p>
+                    <button onclick="toggleSection('candidatsContent')" class="inline-flex items-center bg-secondary-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-secondary-800 transition-colors">
+                        Découvrir <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div id="candidatsContent" class="hidden mt-8 pt-8 border-t border-secondary-200">
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">Vous êtes consultant en IT, Cloud, Data ou Transformation et souhaitez donner une nouvelle dimension à votre parcours ?</h4>
+                        <p class="text-gray-700 mb-6">Chez LCO-Partners, nous accompagnons les consultants, experts et leaders techniques vers des environnements qui valorisent l'expertise, l'impact et la vision.</p>
+                        <p class="text-gray-600 mb-8">Le monde du conseil évolue rapidement : hybridation des compétences, montée en puissance du Cloud, explosion des plateformes Data, exigences accrues en architecture, sécurité, DevOps et delivery. Les clients attendent désormais des profils capables de conjuguer vision stratégique, expertise technique et capacité d'exécution.</p>
+                        <div class="bg-white rounded-xl p-6 mb-8 border border-secondary-100">
+                            <h5 class="font-bold text-gray-900 mb-4">Notre accompagnement</h5>
+                            <p class="text-gray-600 mb-4">Nous travaillons exclusivement en approche directe, ce qui nous permet de vous proposer :</p>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start"><svg class="w-5 h-5 text-secondary-600 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>des missions à forte visibilité auprès des directions IT</li>
+                                <li class="flex items-start"><svg class="w-5 h-5 text-secondary-600 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>des rôles où vos compétences en Architecture, Cloud, Data ou Produit sont réellement valorisées</li>
+                                <li class="flex items-start"><svg class="w-5 h-5 text-secondary-600 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>des environnements innovants (Cloud natif, Data Platforms, IA/LLM, DevOps, SRE)</li>
+                                <li class="flex items-start"><svg class="w-5 h-5 text-secondary-600 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>des postes combinant expertise, delivery et leadership</li>
+                                <li class="flex items-start"><svg class="w-5 h-5 text-secondary-600 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>des opportunités rares, souvent non publiées</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white rounded-xl p-6 mb-8 border border-secondary-100">
+                            <h5 class="font-bold text-gray-900 mb-4">Notre objectif</h5>
+                            <p class="text-gray-600 mb-4">Vous aider à rejoindre un environnement qui reconnaît votre exigence, vos compétences et votre capacité d'impact, qu'il s'agisse :</p>
+                            <ul class="space-y-2 text-gray-700">
+                                <li>• d'un cabinet de conseil de niche</li>
+                                <li>• d'une scale-up technologique</li>
+                                <li>• d'une DSI mature</li>
+                                <li>• ou d'un programme stratégique de transformation</li>
+                            </ul>
+                        </div>
+                        <h5 class="text-xl font-bold text-gray-900 mb-6">Domaines accompagnés</h5>
+                        <div class="grid sm:grid-cols-2 gap-4 mb-8">
+                            <div class="bg-secondary-50 border border-secondary-100 rounded-xl p-4"><h6 class="font-semibold text-gray-900 mb-1">Architecture & Systèmes</h6><p class="text-sm text-gray-600">Architecture IT, applicative, d'entreprise, Cloud (AWS, Azure, GCP), Data & API, modernisation des SI.</p></div>
+                            <div class="bg-secondary-50 border border-secondary-100 rounded-xl p-4"><h6 class="font-semibold text-gray-900 mb-1">Cloud, DevOps & Ingénierie</h6><p class="text-sm text-gray-600">Cloud & Cloud Native, DevOps, SRE, Platform Engineering, Engineering Managers, Tech Leads, CI/CD, Kubernetes.</p></div>
+                            <div class="bg-secondary-50 border border-secondary-100 rounded-xl p-4"><h6 class="font-semibold text-gray-900 mb-1">Data & IA</h6><p class="text-sm text-gray-600">Data Architects & Engineers, DataOps, MLOps, IA, LLM, NLP, gouvernance Data & Analytics avancés.</p></div>
+                            <div class="bg-secondary-50 border border-secondary-100 rounded-xl p-4"><h6 class="font-semibold text-gray-900 mb-1">Conseil & Transformation</h6><p class="text-sm text-gray-600">Consultants IT/Digital, Program & Delivery Managers, Experts transformation SI & stratégie technologique.</p></div>
+                            <div class="bg-secondary-50 border border-secondary-100 rounded-xl p-4 sm:col-span-2 sm:max-w-md sm:mx-auto"><h6 class="font-semibold text-gray-900 mb-1">Cybersécurité</h6><p class="text-sm text-gray-600">Architectes sécurité, SecOps, Pentesters, Experts GRC/IAM & Cloud Security.</p></div>
+                        </div>
+                        <div class="bg-secondary-800 text-white rounded-xl p-6">
+                            <h5 class="font-bold text-lg mb-4">Pourquoi passer par LCO-Partners ?</h5>
+                            <ul class="space-y-3">
+                                <li class="flex items-start"><svg class="w-5 h-5 text-secondary-300 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>Expertise reconnue du marché du conseil IT</li>
+                                <li class="flex items-start"><svg class="w-5 h-5 text-secondary-300 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>Accompagnement confidentiel, transparent et personnalisé</li>
+                                <li class="flex items-start"><svg class="w-5 h-5 text-secondary-300 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>Opportunités sélectives valorisant votre background et votre potentiel</li>
+                                <li class="flex items-start"><svg class="w-5 h-5 text-secondary-300 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>Positionnement clair sur les rôles à forte responsabilité</li>
+                                <li class="flex items-start"><svg class="w-5 h-5 text-secondary-300 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>Accès privilégié à des projets stratégiques souvent hors marché</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qui sommes-nous -->
+    <section id="about" class="py-20 bg-gray-50 scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Qui sommes-nous</h2>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12 mb-16">
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <img src="public/images/laurent-conqui.jpg" alt="Laurent Conqui" class="w-20 h-20 rounded-full object-cover shadow-lg">
+                        <div class="ml-4">
+                            <h3 class="text-2xl font-bold text-gray-900">Laurent Conqui</h3>
+                            <p class="text-primary-600 font-medium">Président & Fondateur de LCO-Partners</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">Depuis plus de vingt ans, j'accompagne des entreprises et des cabinets de conseil dans leurs projets de transformation IT.</p>
+                    <p class="text-gray-600 mb-4">Après un parcours au sein de grands cabinets tels que <span class="font-semibold">Wavestone</span> et <span class="font-semibold">Onepoint</span>, puis la cofondation de deux sociétés à forte dimension technologique, j'ai créé LCO-Partners avec une conviction forte :</p>
+                    <p class="text-primary-700 font-semibold text-lg italic">"La réussite d'un projet dépend avant tout des talents qui le portent."</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-primary-600 to-primary-900 rounded-full flex items-center justify-center"><span class="text-white text-lg font-bold">LCO</span></div>
+                        <div class="ml-4">
+                            <h3 class="text-2xl font-bold text-gray-900">LCO-Partners</h3>
+                            <p class="text-primary-600 font-medium">Cabinet de chasse spécialisé IT & Conseil</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">LCO-Partners accompagne des environnements exigeants : cabinets de conseil technologiques, DSI modernes, scale-ups et programmes de transformation complexes.</p>
+                    <p class="text-gray-600">Nous identifions et sélectionnons des experts IT, Cloud, Data, DevOps, Cybersécurité et Transformation, capables d'intervenir sur des enjeux critiques et stratégiques.</p>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div class="bg-primary-900 text-white rounded-2xl p-8">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        <h4 class="text-xl font-bold ml-3">Expertise technique</h4>
+                    </div>
+                    <p class="text-primary-100">Compréhension approfondie des architectures modernes, du Cloud, de la Data et des environnements DevOps.</p>
+                </div>
+                <div class="bg-secondary-800 text-white rounded-2xl p-8">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-secondary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                        <h4 class="text-xl font-bold ml-3">Expertise humaine</h4>
+                    </div>
+                    <p class="text-secondary-100">Évaluation fine de la posture, du leadership, de l'adéquation culturelle et de la capacité d'impact.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-lg mb-16">
+                <h4 class="text-2xl font-bold text-gray-900 mb-6 text-center">Notre approche</h4>
+                <p class="text-gray-700 text-center mb-8 max-w-3xl mx-auto">Nous travaillons exclusivement en approche directe, avec :</p>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center p-6 bg-gray-50 rounded-xl">
+                        <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
+                        <p class="font-medium text-gray-800">Une sélection rigoureuse des profils</p>
+                    </div>
+                    <div class="text-center p-6 bg-gray-50 rounded-xl">
+                        <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                        </div>
+                        <p class="font-medium text-gray-800">Une compréhension précise des enjeux</p>
+                    </div>
+                    <div class="text-center p-6 bg-gray-50 rounded-xl">
+                        <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                        </div>
+                        <p class="font-medium text-gray-800">Une démarche sur-mesure, confidentielle et engagée</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="inline-block bg-gradient-to-r from-primary-600 to-primary-800 text-white rounded-2xl p-8 max-w-3xl">
+                    <h4 class="text-2xl font-bold mb-4">Notre objectif</h4>
+                    <p class="text-xl text-primary-100">Créer les meilleures rencontres entre <span class="text-white font-semibold">entreprises d'excellence</span> et <span class="text-white font-semibold">talents à forte valeur ajoutée</span>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 gradient-bg scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-white">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Prenons contact</h2>
+                <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">Que vous soyez une entreprise à la recherche de talents ou un professionnel IT souhaitant évoluer, nous sommes à votre écoute.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="mailto:contact@lco-partners.fr" class="inline-flex items-center justify-center bg-white text-primary-900 px-8 py-4 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        contact@lco-partners.fr
+                    </a>
+                    <a href="https://www.linkedin.com/in/laurent-conqui/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-colors">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partenaires -->
+    <section class="partners-section">
+        <div class="partners-container">
+            <h2 class="partners-title">Nos Partenaires</h2>
+        </div>
+        <div class="partners-track">
+            <div class="partners-logos">
+                <img src="images/logo 1.png" alt="Partenaire 1" class="partner-logo">
+                <img src="images/logo 2.png" alt="Partenaire 2" class="partner-logo">
+                <img src="images/logo 3.png" alt="Partenaire 3" class="partner-logo">
+                <img src="images/logo 4.png" alt="Partenaire 4" class="partner-logo">
+            </div>
+            <div class="partners-logos">
+                <img src="images/logo 1.png" alt="Partenaire 1" class="partner-logo">
+                <img src="images/logo 2.png" alt="Partenaire 2" class="partner-logo">
+                <img src="images/logo 3.png" alt="Partenaire 3" class="partner-logo">
+                <img src="images/logo 4.png" alt="Partenaire 4" class="partner-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="text-2xl font-bold mb-4">LCO<span class="text-primary-400">-Partners</span></div>
+                    <p class="text-gray-400">Cabinet de chasse de têtes spécialisé IT & Conseil</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Navigation</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#accueil" class="hover:text-white transition-colors">Accueil</a></li>
+                        <li><a href="#entreprises" class="hover:text-white transition-colors">Entreprises</a></li>
+                        <li><a href="#candidats" class="hover:text-white transition-colors">Candidats</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">Qui sommes-nous</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Expertises</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Architecture IT</li>
+                        <li>Cloud & DevOps</li>
+                        <li>Data & IA</li>
+                        <li>Cybersécurité</li>
+                        <li>Transformation digitale</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                <p>© 2024 LCO-Partners. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleSection(id) {
+            const el = document.getElementById(id);
+            el.classList.toggle('hidden');
+        }
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => document.getElementById('mobileMenu').classList.add('hidden'));
+        });
+    </script>
+</body>
+</html>
